@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.google.com/s2/u/0/favicons?domain=travel.page"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Travel page</title>
     <script
@@ -15,9 +20,14 @@
       <div class="jumbo">
         <div class="navbar">
           <div class="container navbar__container">
-            <h1 class="navbar__title">Travel</h1>
+            <h1 class="navbar__title">
+              <a href="#" class="navbar__title--link">Travel</a>
+            </h1>
             <nav class="navbar__nav">
-              <div class="hamburger"></div>
+              <div class="hamburger">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times hide"></i>
+              </div>
               <ul class="navbar__menu">
                 <li class="navbar__menu--list">
                   <a href="#main" class="navbar__menu--link">Start</a>

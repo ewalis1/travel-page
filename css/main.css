@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;900&family=WindSong&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;900&family=WindSong&display=swap");
 .jumbo {
   width: 100vw;
   height: 90vh;
@@ -16,6 +15,7 @@
   height: 80px;
   background-color: #d3b597;
   position: fixed;
+  box-shadow: -1px 1px 13px -8px #000000;
 }
 .navbar__container {
   width: 100%;
@@ -26,6 +26,10 @@
 }
 .navbar__title {
   font-size: 2rem;
+}
+.navbar__title--link {
+  text-decoration: none;
+  color: black;
 }
 .navbar__menu {
   display: flex;
@@ -54,6 +58,79 @@
   right: 10%;
 }
 
+.hamburger {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navbar__title {
+    position: absolute;
+    top: 25px;
+    margin-left: 20px;
+  }
+  .navbar__menu {
+    padding-top: 1.5rem;
+    height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -420px;
+    background-color: #d3b597;
+    transition: transform 0.3s;
+  }
+  .navbar__menu__nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar__menu--list {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  .navbar__menu--link {
+    margin: 0 auto;
+    padding-bottom: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .quote {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fas.fa-times {
+    display: none;
+  }
+
+  .active-menu {
+    transform: translateY(501px);
+    transition: transform 0.3s;
+  }
+}
 * {
   margin: 0;
   padding: 0;
