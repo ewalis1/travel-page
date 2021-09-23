@@ -173,6 +173,18 @@
   border: 2px dotted #d3b597;
 }
 
+@media (max-width: 578px) {
+  .gallery {
+    width: 100vw;
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+@media (min-width: 579px) and (max-width: 769px) {
+  .gallery {
+    width: 100vw;
+    grid-template-columns: repeat(2, 300px);
+  }
+}
 * {
   margin: 0;
   padding: 0;

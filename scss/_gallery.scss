@@ -36,3 +36,17 @@
   background: #000000;
   border: 2px dotted $color-beige;
 }
+
+@media (max-width: 578px) {
+  .gallery {
+    width: 100vw;
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+
+@media (min-width: 579px) and (max-width: 769px) {
+    .gallery {
+    width: 100vw;
+    grid-template-columns: repeat(2, 300px);
+  }
+}
