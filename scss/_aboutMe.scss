@@ -1,0 +1,46 @@
+.aboutMe {
+  margin-bottom: 20px;
+  width: 100vh;
+  height: 65vh;
+}
+.aboutMe__photos {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--slider {
+    position: relative;
+    width: 27%;
+    height: 100%;
+    img {
+      position: absolute;
+      z-index: 1;
+      border-radius: 5px;
+      clip-path: circle(0% at 0 50%);
+    }
+    .active {
+      clip-path: circle(200% at 0 50%);
+      transition: 1.5s;
+      transition-property: clip-path;
+    }
+  }
+  nav {
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    z-index: 2;
+    transform: translateX(-50%);
+    .nav-btn {
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 11px;
+      height: 11px;
+      margin: 8px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .nav-btn.active {
+      background-color: $color-beige;
+    }
+  }
+}

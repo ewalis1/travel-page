@@ -5,6 +5,8 @@
   justify-content: center;
   align-items: center;
   grid-gap: 20px;
+  animation: fadeIn;
+  animation-duration: 5s;
 }
 
 .gallery__img {
@@ -45,7 +47,7 @@
 }
 
 @media (min-width: 579px) and (max-width: 769px) {
-    .gallery {
+  .gallery {
     width: 100vw;
     grid-template-columns: repeat(2, 300px);
   }

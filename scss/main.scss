@@ -1,6 +1,7 @@
 @import './variables';
 @import './navbar';
 @import './gallery';
+@import './aboutMe';
 
 * {
   margin: 0;
@@ -12,4 +13,8 @@
 .container {
   width: 980px;
   margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 20px;
 }

@@ -24,6 +24,29 @@ const menuFunc = () => {
 
 hamburger.addEventListener('click', menuFunc);
 
+// About me - slider
+
+const slider = document.querySelector('.aboutMe__photos--slider');
+const slides = document.querySelectorAll('.aboutMe__photos--slider img');
+const btns = document.querySelectorAll('.nav-btn');
+let currentSlide = 1;
+
+const slideNav = function (change) {
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+    btns.forEach((btn) => btn.classList.remove('active'));
+  });
+  slides[change].classList.add('active');
+  btns[change].classList.add('active');
+};
+
+btns.forEach((btn, i) => {
+  btn.addEventListener('click', () => {
+    slideNav(i);
+    currentSlide = i;
+  });
+});
+
 //Gallery - lightbox
 
 const images = document.querySelectorAll('.gallery__img');

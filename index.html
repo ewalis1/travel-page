@@ -8,7 +8,12 @@
       type="image/png"
       href="https://www.google.com/s2/u/0/favicons?domain=travel.page"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
+    <script defer src="app.js"></script>
     <title>Travel page</title>
     <script
       src="https://kit.fontawesome.com/178cf58ddc.js"
@@ -57,46 +62,92 @@
       </div>
     </head>
     <main>
-      <section class="gallery">
+      <section class="aboutMe container" id="about">
+        <h1 class="title">About me</h1>
+        <div class="aboutMe__photos">
+          <div class="aboutMe__photos--slider">
+            <img
+              src="assets/antony-bec-FqS49X-tWNU-unsplash.jpg"
+              alt="portrait"
+              width="267px"
+              height="400px"
+              class="active"
+            />
+            <img
+              src="assets/miguel-bruna-TzVN0xQhWaQ-unsplash.jpg"
+              alt="portrait"
+              width="267px"
+              height="400px"
+            />
+            <img
+              src="assets/nadi-whatisdelirium-3VTZloIMFP0-unsplash.jpg"
+              alt="portrait"
+              width="267px"
+              height="400px"
+            />
+            <img
+              src="assets/nathan-dumlao-6dmx8YnkPGo-unsplash.jpg"
+              alt="portrait"
+              width="267px"
+              height="400px"
+            />
+            <nav>
+              <button class="nav-btn active"></button>
+              <button class="nav-btn"></button>
+              <button class="nav-btn"></button>
+              <button class="nav-btn"></button>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery">
         <img
           class="gallery__img"
           src="https://source.unsplash.com/500x500?travel"
+          alt="travel"
         />
         <img
           class="gallery__img"
           src="https://source.unsplash.com/500x500?mountains"
+          alt="mountains"
         />
         <img
           class="gallery__img"
           src="https://source.unsplash.com/500x500?beach"
+          alt="beach"
         />
         <img
           class="gallery__img"
           src="https://source.unsplash.com/500x500?tokyo"
+          alt="tokyo"
         />
         <img
           class="gallery__img"
           src="https://source.unsplash.com/500x500?island"
+          alt="island"
         />
         <img
           class="gallery__img"
           src="https://source.unsplash.com/500x500?rome"
+          alt="rome"
         />
         <img
           class="gallery__img"
           src="https://source.unsplash.com/500x500?brasil"
+          alt="brasil"
         />
         <img
           class="gallery__img"
           src="https://source.unsplash.com/500x500?canada"
+          alt="canada"
         />
         <img
           class="gallery__img"
           src="https://source.unsplash.com/500x500?norway"
+          alt="norway"
         />
       </section>
     </main>
     <footer></footer>
-    <script src="app.js"></script>
   </body>
 </html>
